@@ -4,7 +4,7 @@ import time
 import streamlit as st
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
 import seaborn as sns
 import plotly.express as px
 from sklearn.model_selection import train_test_split
@@ -35,12 +35,12 @@ if uploaded_files:
     y = st.sidebar.selectbox("Y軸", df_columns)
     z = st.sidebar.selectbox("Z軸", df_columns)
     #選択した変数を用いてmtplotlibで可視化
-    fig = plt.figure(figsize= (12,8))
-    plt.scatter(df[x],df[y])
+    #fig = plt.figure(figsize= (12,8))
+    #plt.scatter(df[x],df[y])
     #plt.plot(df[x],df[y])
-    plt.xlabel(x,fontsize=18)
-    plt.ylabel(y,fontsize=18)
-    st.pyplot(fig)
+    #plt.xlabel(x,fontsize=18)
+    #plt.ylabel(y,fontsize=18)
+    #st.pyplot(fig)
     
     #---------------------
     '''st.sidebar.title('軸の設定')
