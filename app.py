@@ -71,7 +71,8 @@ if uploaded_files:
     item = st.multiselect("可視化するカラム", df_columns)
     #散布図の色分け基準を１つ選択する。カテゴリ変数を想定
     hue = st.selectbox("色の基準", df_columns)
-    
+
+    '''
     #実行ボタン（なくてもよいが、その場合、処理を進めるまでエラー画面が表示されてしまう）
     execute_pairplot = st.button("ペアプロット描画")
     #実行ボタンを押したら下記を表示
@@ -82,7 +83,7 @@ if uploaded_files:
             #streamlit上でseabornのペアプロットを表示させる
             fig = sns.pairplot(df_sns, hue="hue")
             st.pyplot(fig)
-
+'''
 
     st.markdown("### モデリング")
     #説明変数は複数選択式
